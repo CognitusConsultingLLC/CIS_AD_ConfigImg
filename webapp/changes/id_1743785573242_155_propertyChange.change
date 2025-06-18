@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1743785573242_155_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "cgdc.configimg",
+    "packageName": "",
+    "content": {
+        "property": "width",
+        "newValue": "14em"
+    },
+    "selector": {
+        "id": "cgdc.configimg::sap.suite.ui.generic.template.ListReport.view.ListReport::xCGDCxC_CONFIGIMG_D--listReport-Appllevel1text",
+        "idIsLocal": false,
+        "type": "sap.m.Column"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/cgdc.configimg/changes/",
+    "projectId": "",
+    "creation": 1743786151935,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.120.14",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}
