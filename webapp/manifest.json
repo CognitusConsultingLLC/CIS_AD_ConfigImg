@@ -1,0 +1,180 @@
+{
+  "_version": "1.60.0",
+  "sap.app": {
+    "id": "cgdc.configimg",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.18.0",
+      "toolsId": "ebeeaf18-c1b2-43a8-b68b-f64576e30c16"
+    },
+    "dataSources": {
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      },
+      "mainService": {
+        "uri": "/sap/opu/odata4/cgdc/ui_configimgd_04/srvd/cgdc/ui_configimg_d/0001/",
+        "type": "OData",
+        "settings": {
+          "annotations": [
+            "annotation"
+          ],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.120.23",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "cgdc.configimg.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "xCGDCxC_CONFIGIMG_DList",
+          "target": "xCGDCxC_CONFIGIMG_DList"
+        },
+        {
+          "pattern": "xCGDCxC_CONFIGIMG_D({key}):?query:",
+          "name": "xCGDCxC_CONFIGIMG_DObjectPage",
+          "target": "xCGDCxC_CONFIGIMG_DObjectPage"
+        }
+      ],
+      "targets": {
+        "xCGDCxC_CONFIGIMG_DList": {
+          "type": "Component",
+          "id": "xCGDCxC_CONFIGIMG_DList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/xCGDCxC_CONFIGIMG_D",
+              "variantManagement": "Page",
+              "navigation": {
+                "xCGDCxC_CONFIGIMG_D": {
+                  "detail": {
+                    "route": "xCGDCxC_CONFIGIMG_DObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable",
+                    "enableExport": false,
+                    "widthIncludingColumnHeader": true
+                  },
+                  "columns": {
+                    "DataField::Appllevel0text": {
+                      "width": "18%"
+                    },
+                    "DataField::Configtext": {
+                      "width": "28%"
+                    },
+                    "DataField::Appllevel2text": {
+                      "width": "18%"
+                    },
+                    "DataField::Appllevel1text": {
+                      "width": "18%"
+                    },
+                    "DataField::Appllevel3text": {
+                      "width": "18%"
+                    }
+                  }
+                }
+              },
+              "initialLoad": "Enabled"
+            }
+          }
+        },
+        "xCGDCxC_CONFIGIMG_DObjectPage": {
+          "type": "Component",
+          "id": "xCGDCxC_CONFIGIMG_DObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/xCGDCxC_CONFIGIMG_D"
+            }
+          }
+        }
+      }
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ListReport.ListReportController": {
+            "controllerName": "cgdc.configimg.ext.controller.ListReportExt"
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

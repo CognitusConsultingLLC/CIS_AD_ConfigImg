@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Measures.V1" Alias="SAP__measures"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="SAP__capabilities"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="SAP__aggregation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="SAP__validation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="SAP__UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="SAP__HTML5"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PDF.v1" Alias="SAP__PDF"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_SESSION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Session.v1" Alias="SAP__session"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HIERARCHY',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Hierarchy.v1" Alias="SAP__hierarchy"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001" Alias="SAP__self">
+            <Annotation Term="SAP__core.SchemaVersion" String="1.0.0"/>
+            <EntityType Name="xCGDCxI_APPL3TXT_VHType">
+                <Key>
+                    <PropertyRef Name="Appll0"/>
+                    <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll2"/>
+                    <PropertyRef Name="Appll3"/>
+                </Key>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll1" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll2" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll3" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appllevel1text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Appllevel2text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Appllevel3text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="xCGDCxI_APPL1TXT_VHType">
+                <Key>
+                    <PropertyRef Name="Lang"/>
+                    <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll0"/>
+                </Key>
+                <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="Appll1" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appllevel1text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="xCGDCxI_APPL0TXT_VHType">
+                <Key>
+                    <PropertyRef Name="Lang"/>
+                    <PropertyRef Name="Appll0"/>
+                </Key>
+                <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appllevel0text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="xCGDCxI_APPL2TXT_VHType">
+                <Key>
+                    <PropertyRef Name="Lang"/>
+                    <PropertyRef Name="Appllvl2"/>
+                    <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll0"/>
+                </Key>
+                <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="Appllvl2" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll1" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appllevel2text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="xCGDCxC_CONFIGIMG_DType">
+                <Key>
+                    <PropertyRef Name="Appll0"/>
+                    <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll2"/>
+                    <PropertyRef Name="Appll3"/>
+                    <PropertyRef Name="configKey"/>
+                </Key>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll1" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll2" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Appll3" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="configKey" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="Sku" Type="Edm.String" Nullable="false" MaxLength="15"/>
+                <Property Name="Configtext" Type="Edm.String" Nullable="false" MaxLength="75"/>
+                <Property Name="Semanticobject" Type="Edm.String" Nullable="false" MaxLength="40"/>
+                <Property Name="Action" Type="Edm.String" Nullable="false" MaxLength="40"/>
+                <Property Name="Cubcokey" Type="Edm.String" Nullable="false" MaxLength="1133"/>
+                <Property Name="UsageType" Type="Edm.String" Nullable="false" MaxLength="5"/>
+                <Property Name="Sequence" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="Appllevel0text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Appllevel1text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Appllevel2text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Appllevel3text" Type="Edm.String" Nullable="false" MaxLength="100"/>
+            </EntityType>
+            <EntityContainer Name="Container">
+                <EntitySet Name="xCGDCxC_CONFIGIMG_D" EntityType="com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.xCGDCxC_CONFIGIMG_DType"/>
+                <EntitySet Name="xCGDCxI_APPL0TXT_VH" EntityType="com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.xCGDCxI_APPL0TXT_VHType"/>
+                <EntitySet Name="xCGDCxI_APPL1TXT_VH" EntityType="com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.xCGDCxI_APPL1TXT_VHType"/>
+                <EntitySet Name="xCGDCxI_APPL2TXT_VH" EntityType="com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.xCGDCxI_APPL2TXT_VHType"/>
+                <EntitySet Name="xCGDCxI_APPL3TXT_VH" EntityType="com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.xCGDCxI_APPL3TXT_VHType"/>
+            </EntityContainer>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appllevel1text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application  Area 1"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appllevel2text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application  Area 2"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appllevel3text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application  Area 3"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType">
+                <Annotation Term="SAP__common.Label" String="Application Level 3 Text VH"/>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/xCGDCxI_APPL3TXT_VH">
+                <Annotation Term="SAP__capabilities.SearchRestrictions">
+                    <Record>
+                        <PropertyValue Property="Searchable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Property="SelectSupported" Bool="true"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL1TXT_VHType/Appllevel1text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application Area 1"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL1TXT_VHType">
+                <Annotation Term="SAP__common.Label" String="Application Level 1 Text VH"/>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/xCGDCxI_APPL1TXT_VH">
+                <Annotation Term="SAP__capabilities.SearchRestrictions">
+                    <Record>
+                        <PropertyValue Property="Searchable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Property="SelectSupported" Bool="true"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL0TXT_VHType/Appllevel0text">
+                <Annotation Term="SAP__common.Label" String="Application Area"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL0TXT_VHType">
+                <Annotation Term="SAP__common.Label" String="Application Level 0 Text VH"/>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/xCGDCxI_APPL0TXT_VH">
+                <Annotation Term="SAP__capabilities.SearchRestrictions">
+                    <Record>
+                        <PropertyValue Property="Searchable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Property="SelectSupported" Bool="true"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL2TXT_VHType/Appllevel2text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application Area 2"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL2TXT_VHType">
+                <Annotation Term="SAP__common.Label" String="Application Level 2 Text VH"/>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/xCGDCxI_APPL2TXT_VH">
+                <Annotation Term="SAP__capabilities.SearchRestrictions">
+                    <Record>
+                        <PropertyValue Property="Searchable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Property="SelectSupported" Bool="true"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Configtext">
+                <Annotation Term="SAP__common.Label" String="Configuration Step"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Sequence">
+                <Annotation Term="SAP__common.IsDigitSequence"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appllevel0text">
+                <Annotation Term="SAP__common.Label" String="Application  Area"/>
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Collection>
+                        <String>../../../../srvd_f4/cgdc/i_appl0txt_vh/0001;ps='srvd-*cgdc*ui_configimg_d-0001';va='com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.et-*cgdc*c_configimg_d.appllevel0text'/$metadata</String>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appllevel1text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application Area 1"/>
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Collection>
+                        <String>../../../../srvd_f4/cgdc/i_appl1txt_vh/0001;ps='srvd-*cgdc*ui_configimg_d-0001';va='com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.et-*cgdc*c_configimg_d.appllevel1text'/$metadata</String>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appllevel2text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application Area 2"/>
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Collection>
+                        <String>../../../../srvd_f4/cgdc/i_appl2txt_vh/0001;ps='srvd-*cgdc*ui_configimg_d-0001';va='com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.et-*cgdc*c_configimg_d.appllevel2text'/$metadata</String>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appllevel3text">
+                <Annotation Term="SAP__common.Label" String="Sub-Application Area 3"/>
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Collection>
+                        <String>../../../../srvd_f4/cgdc/i_appl3txt_vh/0001;ps='srvd-*cgdc*ui_configimg_d-0001';va='com.sap.gateway.srvd.cgdc.ui_configimg_d.v0001.et-*cgdc*c_configimg_d.appllevel3text'/$metadata</String>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType">
+                <Annotation Term="SAP__common.Label" String="Configure Img Projection View"/>
+                <Annotation Term="SAP__UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="TypeName" String="Customizing Implementation Guide"/>
+                        <PropertyValue Property="TypeNamePlural" String="Customizing Implementation Guide"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__UI.LineItem">
+                    <Collection>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="Application Area"/>
+                            <PropertyValue Property="Value" Path="Appllevel0text"/>
+                            <Annotation Term="SAP__UI.Importance" EnumMember="SAP__UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="Sub-Application Area 1"/>
+                            <PropertyValue Property="Value" Path="Appllevel1text"/>
+                            <Annotation Term="SAP__UI.Importance" EnumMember="SAP__UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="Sub-Application Area 2"/>
+                            <PropertyValue Property="Value" Path="Appllevel2text"/>
+                            <Annotation Term="SAP__UI.Importance" EnumMember="SAP__UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="Sub-Application Area 3"/>
+                            <PropertyValue Property="Value" Path="Appllevel3text"/>
+                            <Annotation Term="SAP__UI.Importance" EnumMember="SAP__UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="Configuration Step"/>
+                            <PropertyValue Property="Value" Path="Configtext"/>
+                            <Annotation Term="SAP__UI.Importance" EnumMember="SAP__UI.ImportanceType/High"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="SAP__UI.PresentationVariant">
+                    <Record>
+                        <PropertyValue Property="RequestAtLeast">
+                            <Collection>
+                                <PropertyPath>UsageType</PropertyPath>
+                                <PropertyPath>Cubcokey</PropertyPath>
+                                <PropertyPath>Semanticobject</PropertyPath>
+                                <PropertyPath>Action</PropertyPath>
+                                <PropertyPath>Appllevel3text</PropertyPath>
+                                <PropertyPath>Appllevel2text</PropertyPath>
+                                <PropertyPath>Appllevel1text</PropertyPath>
+                                <PropertyPath>Appllevel0text</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>Appllevel0text</PropertyPath>
+                        <PropertyPath>Appllevel1text</PropertyPath>
+                        <PropertyPath>Appllevel2text</PropertyPath>
+                        <PropertyPath>Appllevel3text</PropertyPath>
+                        <PropertyPath>Configtext</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/xCGDCxC_CONFIGIMG_D">
+                <Annotation Term="SAP__capabilities.SearchRestrictions">
+                    <Record>
+                        <PropertyValue Property="Searchable" Bool="true"/>
+                        <PropertyValue Property="UnsupportedExpressions" EnumMember="SAP__capabilities.SearchExpressions/AND SAP__capabilities.SearchExpressions/OR SAP__capabilities.SearchExpressions/NOT SAP__capabilities.SearchExpressions/group SAP__capabilities.SearchExpressions/phrase"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Property="SelectSupported" Bool="true"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.Container">
+                <Annotation Term="SAP__aggregation.ApplySupported">
+                    <Record>
+                        <PropertyValue Property="Transformations">
+                            <Collection>
+                                <String>aggregate</String>
+                                <String>groupby</String>
+                                <String>filter</String>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Rollup" EnumMember="SAP__aggregation.RollupType/None"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
+                <Annotation Term="SAP__capabilities.FilterFunctions">
+                    <Collection>
+                        <String>eq</String>
+                        <String>ne</String>
+                        <String>gt</String>
+                        <String>ge</String>
+                        <String>lt</String>
+                        <String>le</String>
+                        <String>and</String>
+                        <String>or</String>
+                        <String>contains</String>
+                        <String>startswith</String>
+                        <String>endswith</String>
+                        <String>any</String>
+                        <String>all</String>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.SupportedFormats">
+                    <Collection>
+                        <String>application/json</String>
+                        <String>application/pdf</String>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="SAP__PDF.Features">
+                    <Record>
+                        <PropertyValue Property="DocumentDescriptionReference" String="../../../../default/iwbep/common/0001/$metadata"/>
+                        <PropertyValue Property="DocumentDescriptionCollection" String="MyDocumentDescriptions"/>
+                        <PropertyValue Property="ArchiveFormat" Bool="true"/>
+                        <PropertyValue Property="Border" Bool="true"/>
+                        <PropertyValue Property="CoverPage" Bool="true"/>
+                        <PropertyValue Property="FitToPage" Bool="true"/>
+                        <PropertyValue Property="FontName" Bool="true"/>
+                        <PropertyValue Property="FontSize" Bool="true"/>
+                        <PropertyValue Property="Margin" Bool="true"/>
+                        <PropertyValue Property="Padding" Bool="true"/>
+                        <PropertyValue Property="Signature" Bool="true"/>
+                        <PropertyValue Property="HeaderFooter" Bool="true"/>
+                        <PropertyValue Property="ResultSizeDefault" Int="20000"/>
+                        <PropertyValue Property="ResultSizeMaximum" Int="20000"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.KeyAsSegmentSupported"/>
+                <Annotation Term="SAP__capabilities.AsynchronousRequestsSupported"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appll0">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appll1">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appll2">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Appll3">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/configKey">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxC_CONFIGIMG_DType/Sku">
+                <Annotation Term="SAP__UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL0TXT_VHType/Lang">
+                <Annotation Term="SAP__UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL1TXT_VHType/Lang">
+                <Annotation Term="SAP__UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL2TXT_VHType/Lang">
+                <Annotation Term="SAP__UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL2TXT_VHType/Appllvl2">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL2TXT_VHType/Appll1">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL2TXT_VHType/Appll0">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appll0">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appll1">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appll2">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL3TXT_VHType/Appll3">
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL1TXT_VHType/Appll1">
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL1TXT_VHType/Appll0">
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+            <Annotations Target="SAP__self.xCGDCxI_APPL0TXT_VHType/Appll0">
+                <Annotation Term="SAP__common.Label" String="UUID"/>
+                <Annotation Term="SAP__common.QuickInfo" String="16 Byte UUID in 16 Bytes (Raw Format)"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
