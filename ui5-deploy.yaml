@@ -14,13 +14,13 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          destination: XD2-200-CognitusID
-          url: http://xd2:443
+          destination: XD3-200-CognitusID
+          url: http://xd3:443
           client: '200'
         app:
           name: /CGDC/FR_CONFIGIMG
           description: CIS-GovCon Customizing Implementation Guide
           package: /CGDC/GCXX_T2
-          transport: XD2K901642
+          transport: XD3K900063
         exclude:
           - /test/

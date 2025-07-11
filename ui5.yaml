@@ -17,8 +17,8 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: http://xd2:443
-            destination: XD2-200-CognitusID
+            url: http://xd3:443
+            destination: XD3-202
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

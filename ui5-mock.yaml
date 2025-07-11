@@ -17,8 +17,8 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: http://xd2:443
-            destination: XD2-200-CognitusID
+            url: http://xd3:443
+            destination: XD3-202
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -40,5 +40,5 @@ server:
             mockdataPath: ./webapp/localService/mainService/data
             generateMockData: true
         annotations:
-          - localPath: ./webapp/localService/mainService//CGDC/UI_CONFIGIMGD_02_VAN.xml
+          - localPath: ./webapp/localService/mainService/CGDC_UI_CONFIGIMGD_02_VAN.xml
             urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='%2FCGDC%2FUI_CONFIGIMGD_02_VAN',Version='0001')/$value/

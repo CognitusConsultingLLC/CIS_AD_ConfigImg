@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
         <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.PDF.v1" Alias="SAP__PDF"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
     </edmx:Reference>
-    <edmx:Reference Uri="https://xd2:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://xd3:443/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
     </edmx:Reference>
     <edmx:DataServices m:DataServiceVersion="2.0">
@@ -45,20 +45,23 @@
                     <PropertyRef Name="Appll1"/>
                     <PropertyRef Name="Appll2"/>
                     <PropertyRef Name="Appll3"/>
+                    <PropertyRef Name="configKey"/>
                 </Key>
                 <Property Name="Appll0" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
                 <Property Name="Appll1" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
                 <Property Name="Appll2" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
                 <Property Name="Appll3" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="configKey" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
                 <Property Name="Sku" Type="Edm.String" MaxLength="15"/>
-                <Property Name="Configtext" Type="Edm.String" MaxLength="75"/>
+                <Property Name="Configtext" Type="Edm.String" MaxLength="75" sap:label="Configuration Step"/>
                 <Property Name="Semanticobject" Type="Edm.String" MaxLength="40"/>
                 <Property Name="Action" Type="Edm.String" MaxLength="40"/>
                 <Property Name="Cubcokey" Type="Edm.String" MaxLength="1133"/>
-                <Property Name="Appllevel0text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application  Area" sap:value-list="standard"/>
-                <Property Name="Appllevel1text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area L0" sap:value-list="standard"/>
-                <Property Name="Appllevel2text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area L1" sap:value-list="standard"/>
-                <Property Name="Appllevel3text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area L2" sap:value-list="standard"/>
+                <Property Name="UsageType" Type="Edm.String" MaxLength="5"/>
+                <Property Name="Appllevel0text" Type="Edm.String" MaxLength="100" sap:label="Application  Area" sap:value-list="standard"/>
+                <Property Name="Appllevel1text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application Area 1" sap:value-list="standard"/>
+                <Property Name="Appllevel2text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application Area 2" sap:value-list="standard"/>
+                <Property Name="Appllevel3text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application Area 3" sap:value-list="standard"/>
             </EntityType>
             <EntityType Name="xCGDCxI_APPL0TXT_VHType" sap:label="Application Level 0 Text VH" sap:value-list="true" sap:content-version="1">
                 <Key>
@@ -67,34 +70,46 @@
                 </Key>
                 <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
                 <Property Name="Appll0" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
-                <Property Name="Appllevel0text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area"/>
+                <Property Name="Appllevel0text" Type="Edm.String" MaxLength="100" sap:label="Application Area"/>
             </EntityType>
             <EntityType Name="xCGDCxI_APPL1TXT_VHType" sap:label="Application Level 1 Text VH" sap:value-list="true" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Lang"/>
                     <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll0"/>
                 </Key>
                 <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
                 <Property Name="Appll1" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
-                <Property Name="Appllevel1text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area L1"/>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appllevel1text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application Area 1"/>
             </EntityType>
             <EntityType Name="xCGDCxI_APPL2TXT_VHType" sap:label="Application Level 2 Text VH" sap:value-list="true" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Lang"/>
                     <PropertyRef Name="Appllvl2"/>
+                    <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll0"/>
                 </Key>
                 <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
                 <Property Name="Appllvl2" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
-                <Property Name="Appllevel2text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area L2"/>
+                <Property Name="Appll1" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appllevel2text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application Area 2"/>
             </EntityType>
             <EntityType Name="xCGDCxI_APPL3TXT_VHType" sap:label="Application Level 3 Text VH" sap:value-list="true" sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Lang"/>
-                    <PropertyRef Name="Appllvl3"/>
+                    <PropertyRef Name="Appll0"/>
+                    <PropertyRef Name="Appll1"/>
+                    <PropertyRef Name="Appll2"/>
+                    <PropertyRef Name="Appll3"/>
                 </Key>
-                <Property Name="Lang" Type="Edm.String" Nullable="false" MaxLength="2"/>
-                <Property Name="Appllvl3" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
-                <Property Name="Appllevel3text" Type="Edm.String" MaxLength="75" sap:label="Sub-Application Area L2"/>
+                <Property Name="Appll0" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appll1" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appll2" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appll3" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="Appllevel1text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application  Area 1"/>
+                <Property Name="Appllevel2text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application  Area 2"/>
+                <Property Name="Appllevel3text" Type="Edm.String" MaxLength="100" sap:label="Sub-Application  Area 3"/>
             </EntityType>
             <EntityType Name="SAP__Currency" sap:content-version="1">
                 <Key>
@@ -387,6 +402,9 @@
                                     <PropertyValue Property="LocalDataProperty" PropertyPath="Appllevel0text"/>
                                     <PropertyValue Property="ValueListProperty" String="Appllevel0text"/>
                                 </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Appll0"/>
+                                </Record>
                             </Collection>
                         </PropertyValue>
                     </Record>
@@ -395,7 +413,7 @@
             <Annotations Target="cds_xcgdcxui_configimg_d.xCGDCxC_CONFIGIMG_DType/Appllevel1text" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
-                        <PropertyValue Property="Label" String="Application Area L1"/>
+                        <PropertyValue Property="Label" String="Sub-Application Area 1"/>
                         <PropertyValue Property="CollectionPath" String="xCGDCxI_APPL1TXT_VH"/>
                         <PropertyValue Property="SearchSupported" Bool="false"/>
                         <PropertyValue Property="Parameters">
@@ -403,6 +421,12 @@
                                 <Record Type="Common.ValueListParameterInOut">
                                     <PropertyValue Property="LocalDataProperty" PropertyPath="Appllevel1text"/>
                                     <PropertyValue Property="ValueListProperty" String="Appllevel1text"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Appll1"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Appll0"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -412,7 +436,7 @@
             <Annotations Target="cds_xcgdcxui_configimg_d.xCGDCxC_CONFIGIMG_DType/Appllevel2text" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
-                        <PropertyValue Property="Label" String="Application Area L2"/>
+                        <PropertyValue Property="Label" String="Sub-Application Area 2"/>
                         <PropertyValue Property="CollectionPath" String="xCGDCxI_APPL2TXT_VH"/>
                         <PropertyValue Property="SearchSupported" Bool="false"/>
                         <PropertyValue Property="Parameters">
@@ -429,7 +453,7 @@
             <Annotations Target="cds_xcgdcxui_configimg_d.xCGDCxC_CONFIGIMG_DType/Appllevel3text" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
-                        <PropertyValue Property="Label" String="Application Area L3"/>
+                        <PropertyValue Property="Label" String="Sub-Application Area 3"/>
                         <PropertyValue Property="CollectionPath" String="xCGDCxI_APPL3TXT_VH"/>
                         <PropertyValue Property="SearchSupported" Bool="false"/>
                         <PropertyValue Property="Parameters">
@@ -445,6 +469,91 @@
             </Annotations>
             <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
+            </Annotations>
+            <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities/xCGDCxC_CONFIGIMG_D" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities/xCGDCxI_APPL0TXT_VH" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities/xCGDCxI_APPL1TXT_VH" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities/xCGDCxI_APPL2TXT_VH" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities/xCGDCxI_APPL3TXT_VH" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
             </Annotations>
             <Annotations Target="cds_xcgdcxui_configimg_d.cds_xcgdcxui_configimg_d_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Org.OData.Capabilities.V1.BatchSupport">
@@ -659,8 +768,8 @@
                 </Annotation>
                 <Annotation Term="SAP__common.ValueListWithFixedValues"/>
             </Annotations>
-            <atom:link rel="self" href="https://xd2:443/sap/opu/odata/cgdc/UI_CONFIGIMGD_02/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
-            <atom:link rel="latest-version" href="https://xd2:443/sap/opu/odata/cgdc/UI_CONFIGIMGD_02/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="self" href="https://xd3:443/sap/opu/odata/cgdc/UI_CONFIGIMGD_02/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://xd3:443/sap/opu/odata/cgdc/UI_CONFIGIMGD_02/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
